@@ -1,0 +1,1 @@
+["age_numeric", "race", "gender", "time_in_hospital", "num_lab_procedures", "num_procedures", "num_medications", "number_diagnoses", "number_outpatient", "number_emergency", "number_inpatient", "total_prior_visits", "high_utilizer", "num_active_meds", "on_insulin", "med_changed", "max_glu_serum", "A1Cresult", "admission_type_id", "discharge_disposition_id", "admission_source_id"]

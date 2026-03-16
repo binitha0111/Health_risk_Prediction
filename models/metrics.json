@@ -1,0 +1,12 @@
+{
+  "best_model": "Gradient Boosting",
+  "auc": 0.6616,
+  "logistic_regression_auc": 0.6137,
+  "random_forest_auc": 0.6361,
+  "balanced_random_forest_auc": 0.655,
+  "gradient_boosting_auc": 0.6616,
+  "n_train": 57212,
+  "n_test": 14303,
+  "n_features": 21,
+  "trained_at": "2026-03-11 14:22:27.544351"
+}
