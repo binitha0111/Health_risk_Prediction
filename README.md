@@ -20,13 +20,33 @@ Patient readmission risk prediction using Python, Databricks, and Power BI.
 
 ## Project Structure
 ```
-├── notebooks/          # Local Python notebooks
-├── 01_silver_cleaning  # Databricks - data cleaning
-├── 02_gold_layer       # Databricks - feature engineering
-├── 03_scoring_pipeline # Databricks - daily risk scoring
-├── models/             # Saved model, metrics, feature importance
-├── dashboards/         # Power BI dashboard file
+## Project Structure
+```
+Health_risk_Prediction/
+├── dashboards/
+│   ├── health_risk_prediction.pbix          # Power BI (local CSV)
+│   └── health_risk_prediction_databricks.pbix # Power BI (Databricks live)
+├── models/
+│   ├── best_model.pkl                       # Saved Gradient Boosting model
+│   ├── feature_columns.json                 # Feature list for scoring
+│   ├── metrics.json                         # Model performance metrics
+│   ├── feature_importance.png               # Feature importance chart
+│   └── roc_curve.png                        # ROC curve chart
+├── notebooks/
+│   ├── Databricks/
+│   │   ├── Pipelines/
+│   │   │   ├── 01_silver_cleaning.ipynb     # Data cleaning on Databricks
+│   │   │   ├── 02_gold_layer.ipynb          # Feature engineering on Databricks
+│   │   │   └── 03_scoring_pipeline.ipynb    # Daily risk scoring on Databricks
+│   │   └── SQL/
+│   │       ├── high_risk_indicators         # SQL - insulin & utilizer analysis
+│   │       ├── readmission_by_age           # SQL - readmission rate by age
+│   │       └── risk_summary_by_readmission  # SQL - risk summary by status
+│   └── Local/
+│       ├── 01_data_exploration.ipynb        # EDA and data cleaning
+│       └── 02_scoring_pipeline.py           # Local daily scoring pipeline
 └── README.md
+```
 ```
 
 ## Pipeline Architecture
