@@ -20,33 +20,30 @@ Patient readmission risk prediction using Python, Databricks, and Power BI.
 
 ## Project Structure
 ```
-## Project Structure
-```
 Health_risk_Prediction/
 ├── dashboards/
-│   ├── health_risk_prediction.pbix          # Power BI (local CSV)
-│   └── health_risk_prediction_databricks.pbix # Power BI (Databricks live)
+│   ├── health_risk_prediction.pbix
+│   └── health_risk_prediction_databricks.pbix
 ├── models/
-│   ├── best_model.pkl                       # Saved Gradient Boosting model
-│   ├── feature_columns.json                 # Feature list for scoring
-│   ├── metrics.json                         # Model performance metrics
-│   ├── feature_importance.png               # Feature importance chart
-│   └── roc_curve.png                        # ROC curve chart
+│   ├── best_model.pkl
+│   ├── feature_columns.json
+│   ├── metrics.json
+│   ├── feature_importance.png
+│   └── roc_curve.png
 ├── notebooks/
 │   ├── Databricks/
 │   │   ├── Pipelines/
-│   │   │   ├── 01_silver_cleaning.ipynb     # Data cleaning on Databricks
-│   │   │   ├── 02_gold_layer.ipynb          # Feature engineering on Databricks
-│   │   │   └── 03_scoring_pipeline.ipynb    # Daily risk scoring on Databricks
+│   │   │   ├── 01_silver_cleaning.ipynb
+│   │   │   ├── 02_gold_layer.ipynb
+│   │   │   └── 03_scoring_pipeline.ipynb
 │   │   └── SQL/
-│   │       ├── high_risk_indicators         # SQL - insulin & utilizer analysis
-│   │       ├── readmission_by_age           # SQL - readmission rate by age
-│   │       └── risk_summary_by_readmission  # SQL - risk summary by status
+│   │       ├── high_risk_indicators
+│   │       ├── readmission_by_age
+│   │       └── risk_summary_by_readmission
 │   └── Local/
-│       ├── 01_data_exploration.ipynb        # EDA and data cleaning
-│       └── 02_scoring_pipeline.py           # Local daily scoring pipeline
+│       ├── 01_data_exploration.ipynb
+│       └── 02_scoring_pipeline.py
 └── README.md
-```
 ```
 
 ## Pipeline Architecture
