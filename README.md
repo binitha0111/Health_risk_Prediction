@@ -3,7 +3,11 @@
 Patient readmission risk prediction using Python, Databricks, and Power BI.
 
 ## Project Summary
-- **Dataset**: 101,766 diabetic patient encounters (Kaggle)
+- **Dataset**: 
+This project uses the Diabetes 130-US hospitals dataset from Kaggle:
+
+https://www.kaggle.com/datasets/brandao/diabetes
+
 - **Best Model**: Gradient Boosting (AUC: 0.6616)
 - **Patients Scored**: 71,515 unique patients
 - **High Risk Patients**: 3,420 flagged for intervention
