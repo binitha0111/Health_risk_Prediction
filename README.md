@@ -49,13 +49,13 @@ Health_risk_Prediction/
 ```
 Raw Data (Kaggle CSV)
       ↓
-Bronze Layer (diabetic_data Delta table)
+Bronze Layer (diabetic_data Delta table - Databricks)
       ↓
-Silver Layer (cleaned, deduplicated - 71,515 patients)
+Silver Layer (cleaned, deduplicated - 71,515 patients - Databricks)
       ↓
-Gold Layer (feature engineered - 54 columns)
+Gold Layer (feature engineered - 54 columns - Databricks)
       ↓
-ML Model (Gradient Boosting AUC 0.6616)
+ML Model (Gradient Boosting retrained in Databricks - AUC 0.6364)
       ↓
 Daily Risk Scores (automated Databricks Job - 6 AM)
       ↓
